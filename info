@@ -1,0 +1,2 @@
+$bdd = new PDO('mysql:host=mysql-quizz-sa.alwaysdata.net;dbname='.$nameDB.'; charset=utf8', 'quizz-sa_', 'Domoro@1940!');
+nom base = quizz-sa_quizz

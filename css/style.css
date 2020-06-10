@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+:root{
+    --success-color: #01ff01;
+    --error-color: #e74c3c;
+    --button-color: #3498DB
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+header  nav{
+    background-color: #0A3D62;
+}
+header nav  img{
+    height: 56px;
+}
+header nav div  h1{
+    font-family: Roboto Slab;
+    color: white;
+}
+.titre_login h1{
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 65px;
+}
+.titre_login{
+    background-color: rgba(1,0,0,0.5);
+}
+div .col h1{
+    color:white ;
+}
+.login{
+    width: 80%;
+}
+.title-login{
+    background-color: #3C6382;
+}
+.title-login span{
+    color: white;
+    font-family: "Open Sans";
+}
+.input_login button{
+    background-color: #3C6382;
+    color: white;
+}
+.connexion{
+    background-color: rgba(1,0,0,0.5);
+}
+.d-flex a{
+    font-family: "Roboto Slab";
+    color: #828282;
+}
+.d-flex a:hover{
+    text-decoration: none;
+    color: #828282;
+}
+.col-12 small{
+    visibility: hidden;
+    color: var(--error-color);
+    position: relative;
+}
+.col-12.success input{
+    border-color: var(--success-color);
+}
+.col-12.error input{
+    border-color: var(--error-color);
+}
+.col-12.error small{
+    visibility: visible;
+}
+
+/*PARTIE ADMIN*/
+div .photo-avatar img{
+    border-radius:50%;
+    width: 170px;
+    height: 170px;
+}
+.button-logout{
+    background-color: #25CCF7;
+    color: white;
+    font-family: Roboto;
+}
+.icone-photo{
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 88%;
+    margin-top: -42%;
+}
+.fa-camera{
+    font-size: 22px;
+}
+.user-nom{
+    font-family: "Roboto Slab";
+    font-size: 20px;
+}
+.menu{
+    background-color: #E0E0E0;
+}
+.menu p{
+    color: black;
+}
+.menu:hover{
+    background-color: #F1C40F;
+}
+.menu a:focus{
+    background-color: #F1C40F;
+}
+.menu a:focus p{
+    color: white;
+}
+
+/*DASHBOARD PARTIE*/
+.titre-dashboard{
+    font-family: Rye;
+}
+.icone-dashord-admin{
+    background-color: #FA983A;
+}
+.icone-dashbord .fas{
+    font-size: 60px;
+    color: white;
+}
+.icone-dashord-joueur{
+    background-color: #25CCF7;
+}
+.icone-dashord-question{
+    background-color: #F1C40F;
+}
+.icone-dashord-meilleur-joueur{
+    background-color: #3DC92B;
+}
+.titre-element-dashboard{
+    font-family: "Roboto Slab";
+}
+.titre-graphe-1{
+    background-color: #25CCF7;
+}
+.titre-creation-compte{
+    color: #25CCF7;
+    font-family: "Roboto Slab";
+}
+.titre-graphe-1 h4{
+    color: #E0E0E0;
+    font-family: "Roboto Slab";
+}
+
+/*PARTIE CREATION COMPTE*/
+.titre-creation-compte .fas{
+    font-size: 40px;
+}
+.form-group small{
+    visibility: hidden;
+    color: var(--error-color);
+    position: relative;
+}
+.form-group.success input{
+    border-color: var(--success-color);
+}
+.form-group.error input{
+    border-color: var(--error-color);
+}
+.form-group.error small{
+    visibility: visible;
+}
+/*Inscription*/
+div .photo-avatar-inscription img{
+    border-radius:50%;
+    width: 130px;
+    height: 130px;
+}
+/*Creation de Question*/
+
+.justify-content-center h1{
+    color: #25CCF7;
+    font-family: "Roboto Slab";
+}
+.formulaire-creation-question .form-group label{
+    font-family: "Roboto Slab";
+}
+.formulaire-creation-question textarea{
+    background-color: #F2F2F2;
+}
+.formulaire-creation-question input{
+    background-color: #F2F2F2;
+}
+.formulaire-creation-question select{
+    background-color: #F2F2F2;
+}
+.formulaire-creation-question .fa-plus-circle{
+    font-size: 38px;
+    color: #25CCF7;
+}
+.formulaire-creation-question .fa-trash-alt{
+    font-size: 38px;
+    color: red;
+}
+.error{
+    color: red;
+}
+.errors{
+    outline: 1px solid #f00;
+}
+/*PARTIE LISTER QUESTION*/
+.liste-question h1{
+   color: #25CCF7;
+}
+.liste-question i{
+    color: #25CCF7;
+    font-size: 40px;
+}
+/*PARTIE PARAMETRE*/
+.d-flex .fa-user-cog{
+    font-size: 40px;
+}
+
+@media screen and (min-width: 667px) and  (max-width: 1024px) {
+    body{
+        background-size: unset;
+    }
+    .button-logout {
+        font-size: 13px;
+    }
+    div .photo-avatar img{
+        height: 110px;
+        width: 110px;
+    }
+    div .photo-avatar-inscription img{
+        height: 110px;
+        width: 110px;
+    }
+    .user-nom{
+        font-size: 14px;
+    }
+    .icone-dashbord .fas{
+        font-size: 45px;
+    }
+}
+
+@media(max-width:667px){
+  .titre_login{
+      display: none;
+  }
+    header nav div  h1{
+        font-size: 20px;
+    }
+    div .photo-avatar img{
+        border-radius:50%;
+        width: 60px;
+        height: 60px;
+    }
+    div .photo-avatar-inscription img{
+        border-radius:50%;
+        width: 60px;
+        height: 60px;
+    }
+    .button-logout {
+        font-size: 10px;
+        padding: 0;
+    }
+    .icone-photo{
+       display: none;
+    }
+    .user-nom{
+        font-size: 10px;
+    }
+    .menu p{
+        font-size: 13px;
+    }
+    .icone-dashbord .fas{
+        font-size: 40px;
+    }
+    .titre-creation-compte h1{
+        font-size: 20px;
+    }
+    .titre-creation-compte .fas{
+        font-size: 20px;
+    }
+
+
+}
